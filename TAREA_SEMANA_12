@@ -1,0 +1,26 @@
+# Crear matriz asientos[3][4]
+asientos = [
+    [2, 5, 7, 1],
+    [9, 3, 6, 4],
+    [8, 10, 11, 15]
+]
+
+# Pedir la posición del asiento 10 al usuario
+print("Ingrese fila del asiento 10 (0 a 2):")
+f = int(input())
+
+print("Ingrese columna del asiento 10 (0 a 3):")
+c = int(input())
+
+# Verificar que la posición corresponde al asiento 10 (opcional pero útil)
+if asientos[f][c] == 10:
+    asientos[f][c] = 1
+else:
+    print("La posición ingresada no corresponde al asiento 10.")
+
+# Mostrar matriz 
+print("Estado de la sala:")
+for i in range(3):
+    for j in range(4):
+        print(asientos[i][j], end=" ")
+    print()
